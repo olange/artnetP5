@@ -6,8 +6,8 @@ Uses the [Artnet4j-Elios](https://github.com/Eliosoft/artnet4j-elios) library to
 
 ## Sample output
 
-<image src="docs/images/sample-dmx-console-state.jpg" height="250" />
-<image src="docs/images/sample-matching-artnetp5-display.png" height="250" />
+<img src="docs/images/sample-dmx-console-state.jpg" height="250"/>
+<img src="docs/images/sample-matching-artnetp5-display.png" height="250"/>
 
 ## See also
 
