@@ -23,10 +23,10 @@ https://github.com/Eliosoft/elios/blob/master/src/main/java/net/eliosoft/elios/s
 ## Network configuration
 
 * Enttec OpenDMX Ethernet: 2.0.0.101 / 255.0.0.0
-  [[ images/enttec-opendmx-ethernet-config.png | height = 200px ]]
+  <img src="images/enttec-opendmx-ethernet-config.png" height="250" />
 
 * Computer USB Ethernet: 2.0.0.100 / 255.0.0.0
-  [[ images/apple-usb-ethernet-config.png | height = 200px ]]
+  <img src="images/apple-usb-ethernet-config.png" height="250" />
 
 ## Building and testing Artnet4j
 
