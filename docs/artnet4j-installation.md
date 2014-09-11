@@ -8,25 +8,26 @@ Source: [Issue 2: ArtNetServer doesn't receive ArtDmx packets, so can't recieve 
 
 ## How to add a JAR to a Processing project? 
 
-a) create "code" folder in your sketch folder.
-b1) put jar file (library) into this folder
-b2) if you dont have jar library file, put java souce files in your sketch folder
-c) initiate library object in your sketch 
+1. create "code" folder in your sketch folder.
+2. put jar file (library) into this folder
+3. if you dont have jar library file, put java souce files in your sketch folder
+4. initiate library object in your sketch 
 
 Source: [Processing forums / ArtNet4j](http://forum.processing.org/one/topic/artnet4j.html)
 
-## How to use ArtNet4J to receivre DMX packets?
+## How to use ArtNet4J to receive DMX packets?
 
-ArtNetServerManager.java
-https://github.com/Eliosoft/elios/blob/master/src/main/java/net/eliosoft/elios/server/ArtNetServerManager.java
+See for instance [ArtNetServerManager.java](https://github.com/Eliosoft/elios/blob/master/src/main/java/net/eliosoft/elios/server/ArtNetServerManager.java)'s source code.
 
 ## Network configuration
 
-* Enttec OpenDMX Ethernet: 2.0.0.101 / 255.0.0.0
-  <img src="images/enttec-opendmx-ethernet-config.png" height="250" />
+Enttec OpenDMX Ethernet: 2.0.0.101 / 255.0.0.0
 
-* Computer USB Ethernet: 2.0.0.100 / 255.0.0.0
-  <img src="images/apple-usb-ethernet-config.png" height="250" />
+<img src="images/enttec-opendmx-ethernet-config.png" height="250" />
+
+Computer USB Ethernet: 2.0.0.100 / 255.0.0.0
+
+<img src="images/apple-usb-ethernet-config.png" height="250" />
 
 ## Building and testing Artnet4j
 
