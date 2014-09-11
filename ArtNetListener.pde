@@ -14,8 +14,8 @@ class ArtNetListener {
   private int inPort = ArtNetServer.DEFAULT_PORT;
   private int outPort = ArtNetServer.DEFAULT_PORT;
   private String broadcastAddress = ArtNetServer.DEFAULT_BROADCAST_IP;
-  private int serverSubnet = 0;
-  private int serverUniverse = 0;
+  private int currentSubnet = 1;
+  private int currentUniverse = 0;
   private int sequenceId = 0;
 
   private byte[][][] inputDmxArrays = new byte[ SUBNET_COUNT][ UNIVERSE_COUNT][ DMX_CHANNELS_COUNT];
@@ -69,7 +69,9 @@ class ArtNetListener {
                 artDmxPacket.getDmxData(), 0,
                 inputDmxArrays[ subnet][ universe], 0,
                 artDmxPacket.getNumChannels());
-              println( "Received packet: " + artDmxPacket.getNumChannels());
+              println( "Received packet in universe " + universe
+                + " / subnet " + subnet + " containing "
+                + artDmxPacket.getNumChannels() + " channel values:");
               printArray( artDmxPacket.getDmxData());
               break;
 
@@ -101,7 +103,7 @@ class ArtNetListener {
   }
 
   public byte[] getCurrentInputDmxArray() {
-    return getInputDmxArray( this.serverSubnet, this.serverUniverse);
+    return getInputDmxArray( this.currentSubnet, this.currentUniverse);
   }
  
   public Integer toInt( Byte dmxChannelValue) {
