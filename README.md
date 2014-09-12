@@ -6,8 +6,8 @@ Uses the [Artnet4j-Elios](https://github.com/Eliosoft/artnet4j-elios) library to
 
 ## Sample output
 
-<img src="docs/images/sample-dmx-console-state.jpg" height="250"/>
-<img src="docs/images/sample-matching-artnetp5-display.png" height="200"/>
+<img src="docs/images/sample-dmx-console-state.jpg" height="250" title="Control6 lightning console whose cursors state is captured by the Enttec OpenDMX Ethernet box, and dispatched as ArtNet datagrams over Ethernet"/>
+<img src="docs/images/sample-matching-artnetp5-display.png" height="200" title="ArtNetP5 Processing application listening to the ArtNet DMX Input datagrams and mirroring the state of the lightning console"/>
 
 ## Motivations
 
@@ -25,6 +25,8 @@ That for the illustrated setup, the ArtNet datagrams were:
 * or the values of all 512 DMX channels of the universe/subnet, being sent from time to time.
  
 And that it was indeed possible to have multiple application listen to the same DMX Input events, provided the ArtNet4j library was [patched to set the SO_REUSEADDR socket option](https://github.com/olange/artnet4j-elios/commit/67f4a3362d602cc97cc5849a13d64fa58124abb3) of the ArtNetServer socket listener. Otherwise only one of the two apps would see and react to the ArtNet datagrams.
+
+<img src="docs/images/madmapper-and-artnetp5-listenining-to-dmx.png" height="200" title="MadMapper and ArtNetP5 listening and reacting both to the same DMX Input ArtNet datagrams"/>
 
 ## See also
 
