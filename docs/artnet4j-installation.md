@@ -6,7 +6,7 @@ Using [Artnet4j-Elios](https://github.com/Eliosoft/artnet4j-elios) by Alexandre 
 
 Source: [Issue 2: ArtNetServer doesn't receive ArtDmx packets, so can't recieve DMX data via ArtNet](https://code.google.com/p/artnet4j/issues/detail?id=2)
 
-## How to add a JAR to a Processing project? 
+## How to add a JAR to a Processing project? 
 
 1. create "code" folder in your sketch folder.
 2. put jar file (library) into this folder
@@ -15,7 +15,7 @@ Source: [Issue 2: ArtNetServer doesn't receive ArtDmx packets, so can't recieve 
 
 Source: [Processing forums / ArtNet4j](http://forum.processing.org/one/topic/artnet4j.html)
 
-## How to use ArtNet4J to receive DMX packets?
+## How to use ArtNet4J to receive DMX packets?
 
 See for instance [ArtNetServerManager.java](https://github.com/Eliosoft/elios/blob/master/src/main/java/net/eliosoft/elios/server/ArtNetServerManager.java)'s source code.
 
