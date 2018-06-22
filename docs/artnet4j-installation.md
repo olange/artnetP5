@@ -103,7 +103,7 @@ If it doesn't see any ArtNet device, you'll get:
     0 nodes found:
     ...
 
-## Installing Mercurial, Git, Ant and Maven
+## Installing Mercurial, Git, Ant and Maven
 
     brew install hg (for Artnet4j)
     brew install ant (for ArtNet4j)
